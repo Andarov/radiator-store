@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radiators</title>
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css -->
+    <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body class="font-europa font-normal text-base">
+
+    <!-- Header -->
+    <header>
+        <!-- header top-->
+        <div class="bg-rs-green-dark py-3">
+            <p class="text-center text-white px-2">Up to <strong>60% off </strong> selected items <span
+                    class="hidden sm:inline">+ <strong>10% off</strong> all everything. Ends <strong>in 1d 10h 07m
+                        55s</strong></span></p>
+        </div>
+        <!-- middle -->
+        <div class="hidden py-3 bg-rs-black xl:block">
+            <div class="w-full mx-auto max-w-base px-5">
+                <div class="flex justify-between">
+
+                    <!-- Stars -->
+                    <div class="flex items-center whitespace-nowrap">
+                        <div class="text-13 font-normal text-white mr-5">We are rated 4.8 out of 5</div>
+                        <div class="flex gap-0.5 mr-3">
+                            <span class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                                <img src="./img/star-light.svg" alt="Star">
+                            </span>
+                            <span class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                                <img src="./img/star-light.svg" alt="Star">
+                            </span>
+                            <span class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                                <img src="./img/star-light.svg" alt="Star">
+                            </span>
+                            <span class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                                <img src="./img/star-light.svg" alt="Star">
+                            </span>
+                            <span class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                                <img src="./img/star-light.svg" alt="Star">
+                            </span>
+                        </div>
+                        <div class="mr-0.5 shrink-0">
+                            <img src="./img/star-grin.svg" alt="Green star">
+                        </div>
+                        <div class="text-13 font-normal text-white">Trustipilot</div>
+                    </div>
+
+                    <!-- Navbar -->
+                    <nav>
+                        <ul class="flex gap-8">
+                            <li>
+                                <a href="#" class="text-13 text-white">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-13 text-white">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-13 text-white">Need help?</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-13 text-white">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo&Navbar -->
+        <div class="py-4 bg-white border">
+            <div class="w-full mx-auto max-w-base px-5">
+                <div class="flex justify-between items-center">
+                    <!-- Hamburger-menu -->
+                    <button id="menu-icon" class="w-4 h-3 flex items-center justify-center xl:hidden mr-5"
+                        type="button">
+                        <i class="fa-solid fa-bars "></i>
+                    </button>
+                    <!-- Logo -->
+                    <a href="index.html" class="order-2 flex items-center mr-3 sm:order-1">
+                        <img class="hidden mr-2 sm:block" src="../img/logo.svg" alt="Logo">
+                        <img src="../img/RADIATORSONLINE.com.svg" alt="Radiators">
+                    </a>
+                    <!-- NAVBAR -->
+                    <nav id="js-sitenav" class="order-2 hidden mr-5 xl:block">
+                        <ul class="flex gap-8">
+                            <li>
+                                <!-- Exit-button -->
+                                <button id="js-sitenav-close" class="hidden">
+                                    <i class="fa-regular fa-circle-xmark"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="font-normal text-body text-black-text whitespace-nowrap">Radiators</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-normal text-body text-black-text whitespace-nowrap">Towel
+                                    Radiators</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-normal text-body text-black-text whitespace-nowrap">Electric
+                                    Radiators</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-normal text-body text-black-text whitespace-nowrap">Valves &
+                                    Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-normal text-body text-black-text whitespace-nowrap">Brands</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="font-normal text-body text-rs-green-dark py-1 px-1.5 bg-rs-green-dark/15 rounded-sm whitespace-nowrap">BTU
+                                    Calculators</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Form-->
+                    <form class="sm:ml-auto mr-3 order-1 sm:mr-8 sm:order-2">
+                        <div class="relative w-full sm:min-w-56">
+                            <input
+                                class="w-full hidden border border-gray-500 rounded-sm p-2 text-sm leading-4.5 focus:outline-none sm:block md:py-3 md:pl-4"
+                                placeholder="Search" type="search">
+                            <i id="js-search-icon"
+                                class="top-2.5 right-3 fa-solid fa-magnifying-glass sm:absolute md:top-3.5"></i>
+                        </div>
+                    </form>
+
+                    <!-- Icons -->
+                    <div class="order-3 flex  max-w-full items-center gap-5">
+                        <a href="#" class="ml-auto sm:ml-0">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <button class="order-4 shrink-0" type="button">
+                            <img src="../img/card.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile-menu -->
+        <div id="mob-menu"
+            class="hidden w-full   absolute top-[113px] sm:top  md:top-[131px]  right-0 left-0 z-40 bg-white ">
+            <div class="h-full flex min-h-[80vh] flex-col px-5">
+
+                <div class="divide-y divide-gray-lighter grow  ">
+                    <!-- 1 -->
+                    <a href="dropdown.html" class="flex items-center justify-between py-5">
+                        <p class="text-body text-black-text caaitalize">Radiators</p>
+                        <img src="./img/right.svg" alt="Right icon">
+                    </a>
+                    <!-- 2 -->
+                    <a href="dropdown.html" class="flex items-center justify-between py-5">
+                        <p class="text-body text-black-text capitalize">Towel Radiators</p>
+                        <img src="./img/right.svg" alt="Right icon">
+                    </a>
+                    <!-- 3 -->
+                    <a href="dropdown.html" class="flex items-center justify-between py-5">
+                        <p class="text-black-text capitalize">Electric Radiators</p>
+                        <img src="./img/right.svg" alt="Right icon">
+                    </a>
+                    <!-- 4 -->
+                    <a href="dropdown.html" class="flex items-center justify-between py-5">
+                        <p class="text-black-text capitalize">Valves & Accessories</p>
+                        <img src="./img/right.svg" alt="Right icon">
+                    </a>
+                    <!-- 5 -->
+                    <a href="dropdown.html" class="flex items-center justify-between py-5">
+                        <p class="text-black-text capitalize">Brands</p>
+                        <img src="./img/right.svg" alt="Right icon">
+                    </a>
+                    <!-- 6 -->
+                    <a href="dropdown.html" class="flex items-center justify-between py-5">
+                        <p class="font-normal text-rs-green-dark py-1 px-2 bg-rs-green-dark/15 whitespace-nowrap">BTU
+                            Calculator</p>
+                        <img src="./img/right.svg" alt="Right icon">
+                    </a>
+
+                </div>
+
+                <div class="w-full mt-auto flex mb-9 bg-white">
+                    <ul class="flex flex-col w-full mt-auto  space-y-5">
+                        <li><a href="#" class="text-sm text-black-text tracking-0.44">Blog</a></li>
+                        <li><a href="#" class="text-sm text-black-text tracking-0.44">FAQs</a></li>
+                        <li><a href="#" class="text-sm text-black-text tracking-0.44">Need help?</a></li>
+                        <li><a href="#" class="text-sm text-black-text tracking-0.44">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tab   -->
+        <div class="hidden xl:block py-5 bg-rs-green-light">
+            <div class="w-full mx-auto max-w-base px-5">
+                <ul class="flex flex-wrap gap-4 xl:gap-6">
+                    <li><a href="#" class="tab-nav-link">All</a></li>
+                    <li><a href="#" class="tab-nav-link">Aluminium</a></li>
+                    <li><a href="#" class="tab-nav-link">Cast Iron</a></li>
+                    <li><a href="#" class="tab-nav-link">Column</a></li>
+                    <li><a href="#" class="tab-nav-link">Compact</a></li>
+                    <li><a href="#" class="tab-nav-link">Designer</a></li>
+                    <li><a href="#" class="tab-nav-link">Electric</a></li>
+                    <li><a href="#" class="tab-nav-link">Flat Panel</a></li>
+                    <li><a href="#" class="tab-nav-link">Horizontal</a></li>
+                    <li><a href="#" class="tab-nav-link">Mirror</a></li>
+                    <li><a href="#" class="tab-nav-link">Stainless Steel</a></li>
+                    <li><a href="#" class="tab-nav-link">Stone</a></li>
+                    <li><a href="#" class="tab-nav-link">Traditional</a></li>
+                    <li><a href="#" class="tab-nav-link">Vertical</a></li>
+                    <li class="flex items-center">
+                        <img class="mr-1.5" src="./img/picker.svg" alt="RAl colours">
+                        <a href="#" class="tab-nav-link">RAL Colours</a>
+                    </li>
+                    <li><a href="#" class="text-body tab-nav-link text-[#b8003c]">Sale</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero pt-[400px] pb-10 bg-top bg-rs-black bg-no-repeat lg:bg-center lg:pt-24 lg:pb-24"
+        style="background-image: url('./img/hero-img.png')">
+        <div class="container flex max-w-base mx-auto items-center px-5">
+            <!-- Hero-box -->
+            <div class="flex flex-col justify-center items-start text-white w-full shrink-0 lg:justify-start lg:w-1/2">
+                <!-- Hero-title -->
+                <h3 class="font-bold text-32 lg:text-42 mt-auto">The designer collection</h3>
+                <!-- Hero-text -->
+                <p class="text-22 mb-4 lg:text-26 lg:mb-5">Style, warmth and variety</p>
+                <!-- Hero-link -->
+                <a class="main-link" href="#">Shop designer radiators</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section -->
+    <section class="bg-rs-green-light pt-6 pb-5 mb-10">
+        <h2 class="hidden">section</h2>
+        <div class="container w-full max-w-[1480px] px-5 mx-auto">
+            <ul class="flex justify-center items-center xl:justify-between">
+                <!-- One -->
+                <li
+                    class="hidden relative pr-12 text-sm leading-14 font-normal text-rs-black after-point whitespace-nowrap xl:block">
+                    Fast & Free Delivery</li>
+                <!-- Two -->
+                <li
+                    class="hidden relative px-12 text-sm leading-14 font-normal text-rs-black after-point whitespace-nowrap xl:block">
+                    Safe & Secure</li>
+                <!-- Three -->
+                <li
+                    class="relative text-xxs leading-14 font-normal text-rs-black sm:text-sm sm:px-6 xl:px-12 after-point">
+                    <!-- Stars -->
+                    <div class="flex gap-0.5 mr-3 whitespace-nowrap">
+                        <div class="text-sm font-normal text-rs-black mr-2 xl:mr-5">We are rated 4.8 out of 5</div>
+                        <div class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                            <img src="./img/star-light.svg" alt="Star">
+                        </div>
+                        <div class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                            <img src="./img/star-light.svg" alt="Star">
+                        </div>
+                        <div class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                            <img src="./img/star-light.svg" alt="Star">
+                        </div>
+                        <div class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                            <img src="./img/star-light.svg" alt="Star">
+                        </div>
+                        <div class="shrink-0 p-0.5 bg-rs-green-dark flex justify-center items-center">
+                            <img src="./img/star-light.svg" alt="Star">
+                        </div>
+                        <div class="mr-0.5 shrink-0">
+                            <img src="./img/star-light.svg" alt="Green star">
+                        </div>
+                        <div class="text-sm font-normal text-rs-black">Trustipilot</div>
+                    </div>
+                </li>
+                <!-- Four -->
+                <li
+                    class="hidden relative px-12 text-sm leading-14 font-normal text-rs-black after-point whitespace-nowrap xl:block">
+                    Trusted Radiator Brands</li>
+                <!-- Five -->
+                <li
+                    class="hidden relative pl-12 text-sm leading-14 font-normal text-rs-black whitespace-nowrap xl:block">
+                    Radiator Valves</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Category -->
+    <section>
+        <!-- Category-heading -->
+        <div class="container max-w-base px-5 mb-12 mx-auto">
+            <!-- Category-heading -->
+            <div class="flex justify-between items-center mb-14">
+                <h3 class="font-bold text-22 lg:text-26">Shop by category</h3>
+                <!-- Category-link -->
+                <a class="main-link" href="#">Shop all</a>
+            </div>
+
+            <!-- Grid-category -->
+            <div class="hidden sm:gap-6 sm:grid sm:grid-cols-2 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4 xl:gap-12">
+                <!-- 1 -->
+                <div class="relative flex justify-center items-center h-75">
+                    <img src="./img/cards/Bitmap-1.png" class="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+                        alt="card img" />
+                    <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Designer radiators</a>
+                </div>
+                <!-- 2 -->
+                <div class="relative flex justify-center items-center h-75">
+                    <img src="./img/cards/Bitmap-2.png" class="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+                        alt="card img" />
+                    <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Column radiators</a>
+                </div>
+                <!-- 3 -->
+                <div class="relative flex justify-center items-center h-75">
+                    <img src="./img/cards/Bitmap-3.png" class="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+                        alt="card img" />
+                    <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Traditional radiators</a>
+                </div>
+                <!-- 4 -->
+                <div class="relative flex justify-center items-center h-75">
+                    <img src="./img/cards/Bitmap-4.png" class="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+                        alt="card img" />
+                    <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Electric radiators</a>
+                </div>
+                <!-- 5 -->
+                <div class="relative flex justify-center items-center h-75">
+                    <img src="./img/cards/Bitmap-5.png" class="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+                        alt="card img" />
+                    <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Flat panel radiators</a>
+                </div>
+                <!-- 6 -->
+                <div class="relative flex justify-center items-center h-75">
+                    <img src="./img/cards/Bitmap-6.png" class="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+                        alt="card img" />
+                    <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Aluminium radiators</a>
+                </div>
+                <!-- 7 -->
+                <div class="relative flex justify-center items-center h-75">
+                    <img src="./img/cards/Bitmap-7.png" class="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+                        alt="card img" />
+                    <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Towel radiators</a>
+                </div>
+                <!-- 8 -->
+                <div class="relative flex justify-center items-center h-75">
+                    <img src="./img/cards/Bitmap-8.png" class="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+                        alt="card img" />
+                    <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Radiator accessories</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Category-container -->
+        <div class="sm:hidden container max-w-base mx-auto px-5">
+            <div class="relative pb-14 w-full">
+                <div class="swiper w-full h-full ml-auto mr-auto category">
+                    <div class="swiper-wrapper">
+                        <!-- Category-1 -->
+                        <div class="swiper-slide flex h-75 items-center justify-center relative">
+                            <img src="./img/cards/Bitmap-1.png"
+                                class="absolute top-0 left-0 w-full h-full -z-10 object-cover" alt="card img" />
+                            <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Designer radiators</a>
+                        </div>
+                        <!-- Category-2 -->
+                        <div class="swiper-slide flex h-75 items-center justify-center relative">
+                            <img src="./img/cards/Bitmap-2.png"
+                                class="absolute top-0 left-0 w-full h-full -z-10 object-cover" alt="card img" />
+                            <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Column radiators</a>
+                        </div>
+                        <!-- Category-3 -->
+                        <div class="swiper-slide flex h-75 items-center justify-center relative">
+                            <img src="./img/cards/Bitmap-3.png"
+                                class="absolute top-0 left-0 w-full h-full -z-10 object-cover" alt="card img" />
+                            <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Traditional radiators</a>
+                        </div>
+                        <!-- Category-4 -->
+                        <div class="swiper-slide flex h-75 items-center justify-center relative">
+                            <img src="./img/cards/Bitmap-4.png"
+                                class="absolute top-0 left-0 w-full h-full -z-10 object-cover" alt="card img" />
+                            <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Electric radiators</a>
+                        </div>
+                        <!-- Category-5 -->
+                        <div class="swiper-slide flex h-75 items-center justify-center relative">
+                            <img src="./img/cards/Bitmap-5.png"
+                                class="absolute top-0 left-0 w-full h-full -z-10 object-cover" alt="card img" />
+                            <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Flat panel radiators</a>
+                        </div>
+                        <!-- Category-6 -->
+                        <div class="swiper-slide flex h-75 items-center justify-center relative">
+                            <img src="./img/cards/Bitmap-6.png"
+                                class="absolute top-0 left-0 w-full h-full -z-10 object-cover" alt="card img" />
+                            <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Aluminium radiators</a>
+                        </div>
+                        <!-- Category-7 -->
+                        <div class="swiper-slide flex h-75 items-center justify-center relative">
+                            <img src="./img/cards/Bitmap-7.png"
+                                class="absolute top-0 left-0 w-full h-full -z-10 object-cover" alt="card img" />
+                            <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Towel radiators</a>
+                        </div>
+                        <!-- Category-8 -->
+                        <div class="swiper-slide flex h-75 items-center justify-center relative">
+                            <img src="./img/cards/Bitmap-8.png"
+                                class="absolute top-0 left-0 w-full h-full -z-10 object-cover" alt="card img" />
+                            <a class="main-link leading-18 text-white mt-auto mb-9" href="#">Radiator accessories</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Category-scrollbar -->
+                <div class="swiper-scrollbar" style="height: 1px"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid-col-2 -->
+    <section class="pb-6  pt-14 lg:pb-20">
+        <!-- Container -->
+        <div class="container flex flex-wrap justify-between max-w-base mx-auto lg:px-5 lg:gap-4">
+            <!-- First-image-box -->
+            <div class="flex flex-col relative  min-h-100 w-full lg:max-w-172 lg:min-h-124">
+                <img class="absolute object-cover w-full h-full top-0 left-0 -z-20" src="./img/Object.png"
+                    alt="Colour radiators" />
+                <div class="mt-auto pl-9 pr-11 pb-10 text-white lg:px-16">
+                    <h3 class="font-bold   text-28 mb-2 text-white sm:mb-3 lg:text-42">A colour for everyone</h3>
+                    <p class="text-lg mb-3 lg:text-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Minus,pariatur
+                        laboriosam.</p>
+                    <a class="main-link decoration-white" href="#">Shop RAL colour radiators </a>
+                </div>
+            </div>
+
+            <!-- Second-image-box -->
+            <div class="flex flex-col  text-right relative min-h-100 lg:max-w-172 w-full lg:min-h-124">
+                <img class="absolute object-cover w-full h-full top-0 left-0 -z-20" src="./img/Oval.png"
+                    alt="Colour radiators" />
+                <div class="mt-auto pl-9 pr-11 pb-10 text-white lg:px-16">
+                    <h3 class="font-bold   text-28 mb-2 text-white sm:mb-3 lg:text-42">BTU Calculator headline</h3>
+                    <p class="text-lg mb-3 lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing sed do
+                        eiusmod tempor
+                        incididunt</p>
+                    <a class="main-link decoration-white" href="#"> Launch our BTU Calculator </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bestSellers -->
+    <section class="pt-6 lg:pt-20 lg:pb-16">
+        <!-- bestSeller-container -->
+        <div class="container relative max-w-base px-5 mb-12 mx-auto flex justify-between gap-4 items-center">
+            <!-- bestSeller-header -->
+            <div class="flex items-center w-full gap-4 justify-between md:justify-start">
+                <!-- bestSeller-title -->
+                <h3 class="font-bold text-rs-black text-22 tracking-0.5 capitalize lg:text-26 lg:leading-8">Best sellers
+                </h3>
+                <!-- bestseller-link -->
+                <a class="main-link text-right md:text-left" href="#">Shop all</a>
+            </div>
+            <!-- bestSeller-navigation -->
+            <div class="w-20 relative hidden md:flex items-center lg:w-16">
+                <!-- Next -->
+                <div class="swiper-button-next right-0 after:hidden before:hidden">
+                    <img width="22" src="./img/room/next.svg" alt="Next icon" />
+                </div>
+                <!-- Prev -->
+                <div class="swiper-button-prev left-0 after:hidden before:hidden">
+                    <img width="22" src="./img/room/prev.svg" alt="next-icon" />
+                </div>
+            </div>
+        </div>
+        <!-- Swipper-container -->
+        <div class="container max-w-base px-5 mx-auto">
+            <div class="swiper pb-12 best-seller w-full lg:pb-16">
+                <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="swiper-slide">
+                        <img height="335" src="./img/Best-Sellers/Bitmap-1.png" alt="">
+                        <!-- Swipper-content -->
+                        <div class="pt-6">
+                            <h3 class="text-base leading-4 tracking-0.5 mb-2 lg:leading-5 lg:mb-1">TowelRads - Iridio
+                                Vertical Towel Radiator</h3>
+                            <span class="text-base tracking-0.5 opacity-50 block mb-3 lg:text:sm">HeatQuick</span>
+                            <p class="font-bold text-base leading-4 lg:leading-5">£80.00</p>
+                            <span class="text-xxs leading-5 text-rs-black/50">Over 255 colours</span>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide ">
+                        <img height="335" src="./img/Best-Sellers/Bitmap-4.png" alt="">
+                        <!-- Swipper-content -->
+                        <div class="pt-6">
+                            <h3 class="text-base leading-4 tracking-0.5 mb-2 lg:leading-5 lg:mb-1">TowelRads - Iridio
+                                Vertical Towel Radiator</h3>
+                            <span class="text-base tracking-0.5 opacity-50 block mb-3 lg:text:sm">HeatQuick</span>
+                            <p class="font-bold text-base leading-4 lg:leading-5">£80.00</p>
+                            <span class="text-xxs leading-5 text-rs-black/50">Over 255 colours</span>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide ">
+                        <img height="335" src="./img/Best-Sellers/Bitmap-3.png" alt="">
+                        <!-- Swipper-content -->
+                        <div class="pt-6">
+                            <h3 class="text-base leading-4 tracking-0.5 mb-2 lg:leading-5 lg:mb-1">TowelRads - Iridio
+                                Vertical Towel Radiator</h3>
+                            <span class="text-base tracking-0.5 opacity-50 block mb-3 lg:text:sm">HeatQuick</span>
+                            <p class="font-bold text-base leading-4 lg:leading-5">£80.00</p>
+                            <span class="text-xxs leading-5 text-rs-black/50">Over 255 colours</span>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="swiper-slide ">
+                        <img height="335" src="./img/Best-Sellers/Bitmap-2.png" alt="">
+                        <!-- Swipper-content -->
+                        <div class="pt-6">
+                            <h3 class="text-base leading-4 tracking-0.5 mb-2 lg:leading-5 lg:mb-1">TowelRads - Iridio
+                                Vertical Towel Radiator</h3>
+                            <span class="text-base tracking-0.5 opacity-50 block mb-3 lg:text:sm">HeatQuick</span>
+                            <p class="font-bold text-base leading-4 lg:leading-5">£80.00</p>
+                            <span class="text-xxs leading-5 text-rs-black/50">Over 255 colours</span>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="swiper-slide ">
+                        <img height="335" src="./img/Best-Sellers/Bitmap-3.png" alt="">
+                        <!-- Swipper-content -->
+                        <div class="pt-6">
+                            <h3 class="text-base leading-4 tracking-0.5 mb-2 lg:leading-5 lg:mb-1">TowelRads - Iridio
+                                Vertical Towel Radiator</h3>
+                            <span class="text-base tracking-0.5 opacity-50 block mb-3 lg:text:sm">HeatQuick</span>
+                            <p class="font-bold text-base leading-4 lg:leading-5">£80.00</p>
+                            <span class="text-xxs leading-5 text-rs-black/50">Over 255 colours</span>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="swiper-slide ">
+                        <img height="335" src="./img/Best-Sellers/Bitmap-2.png" alt="">
+                        <!-- Swipper-content -->
+                        <div class="pt-6">
+                            <h3 class="text-base leading-4 tracking-0.5 mb-2 lg:leading-5 lg:mb-1">TowelRads - Iridio
+                                Vertical Towel Radiator</h3>
+                            <span class="text-base tracking-0.5 opacity-50 block mb-3 lg:text:sm">HeatQuick</span>
+                            <p class="font-bold text-base leading-4 lg:leading-5">£80.00</p>
+                            <span class="text-xxs leading-5 text-rs-black/50">Over 255 colours</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar" style="height: 2px"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand -->
+    <section class="pt-9 lg:pt-14">
+        <!-- Brand-container -->
+        <div class="container max-w-base px-5 mb-12 mx-auto flex justify-between gap-4 items-center">
+            <!-- Brand-heading -->
+            <h3 class="text-22 text-rs-black font-bold tracking-0.5 lg:text-26">Shop by brand</h3>
+            <!-- Brand-link -->
+            <a class="main-link" href="#">View all brands</a>
+        </div>
+        <!-- Swipper-container -->
+        <div class="relative container max-w-base px-5 mx-auto">
+            <div class="swiper brand pb-14 w-full h-full">
+                <div class="swiper-wrapper">
+                    <!-- Swipper-1 -->
+                    <div
+                        class="swiper-slide bg-white justify-center text-center border w-40 h-40 px-3 py-3 flex items-center">
+                        <img width="128" src="./img/brend/Atlantic.svg" alt="Atlantic logo" />
+                    </div>
+                    <!-- Swipper-2 -->
+                    <div
+                        class="swiper-slide bg-white justify-center text-center border w-40 h-40 px-3 py-3 flex items-center">
+                        <img width="128" src="./img/brend/Atlantic.svg" alt="Atlantic logo" />
+                    </div>
+                    <!-- Swipper-3 -->
+                    <div
+                        class="swiper-slide bg-white justify-center text-center border w-40 h-40 px-3 py-3 flex items-center">
+                        <img src="./img/brend/Bitmap-1.svg" alt="Delonghi" />
+                    </div>
+                    <!-- Swipper-4 -->
+                    <div
+                        class="swiper-slide bg-white justify-center text-center border w-40 h-40 px-3 py-3 flex items-center">
+                        <img src="./img/brend/Bitmap-2.svg" alt="DQ heating" />
+                    </div>
+                    <!-- Swipper-5 -->
+                    <div
+                        class="swiper-slide bg-white justify-center text-center border w-40 h-40 px-3 py-3 flex items-center">
+                        <img src="./img/brend/Bitmap-3.svg" alt="Eucotherm" />
+                    </div>
+                    <!-- Swipper-6 -->
+                    <div
+                        class="swiper-slide bg-white justify-center text-center border w-40 h-40 px-3 py-3 flex items-center">
+                        <img src="./img/brend/Bitmap-4.svg" alt="Reina" />
+                    </div>
+                    <!-- Swipper-7 -->
+                    <div
+                        class="swiper-slide bg-white justify-center text-center border w-40 h-40 px-3 py-3 flex items-center">
+                        <img src="./img/brend/Bitmap-5.svg" alt="Terma" />
+                    </div>
+                    <!-- Swipper-8 -->
+                    <div
+                        class="swiper-slide bg-white justify-center text-center border w-40 h-40 px-3 py-3 flex items-center">
+                        <img src="./img/brend/Bitmap-6.svg" alt="Ultraheat" />
+                    </div>
+                </div>
+                <div style="height: 1px" class="swiper-scrollbar -bottom-[54px]"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colours -->
+    <section class="pt-16 pb-7 lg:pb-14">
+        <!-- container -->
+        <div class="container max-w-base mx-auto lg:px-5">
+            <div class="bg-rs-black w-full block flex-wrap lg:flex">
+                <!-- Image-box -->
+                <div class="w-full lg:w-1/2">
+                    <img height="500" class="object-cover lg:h-125 h-100 w-full" src="./img/Mask.png" alt="Radiator">
+                </div>
+                <!-- Context-box -->
+                <div
+                    class="text-white mt-8 w-full bg-rs-black flex flex-col items-end text-right pr-6 pb-14 pl-6 md:pl-11 lg:pl-14 lg:pr-16 lg:pb-[42px] lg:w-1/2">
+                    <h3 class="mt-auto text-white text-28 font-bold mb-2 sm:mb-3 lg:text-42">The designer collection
+                    </h3>
+                    <p class="text-lg mb-3 lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing sed do
+                        eiusmod tempor
+                        incididunt</p>
+                    <a class="main-link" href="#">Shop all</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by room-->
+    <section class="mb-9 pt-7 lg:pt-16 lg:pb-16">
+        <!-- container -->
+        <div class="container relative max-w-base px-5 mb-12 mx-auto flex justify-between gap-4 items-center">
+            <!-- Swipper-header -->
+            <div class="flex items-center w-full gap-4 justify-between md:justify-start">
+                <!-- Swipper-title -->
+                <h3 class="font-bold text-rs-black text-22 tracking-0.5 lg:text-26 lg:leading-8">Shop by room</h3>
+                <!-- swiper-link -->
+                <a class="main-link text-right md:text-left" href="#">Let us inspire</a>
+            </div>
+            <!-- Swiper-navigation -->
+            <div class="w-20 relative hidden md:flex items-center lg:w-16">
+                <!-- Next -->
+                <div class="swiper-button-next right-0 after:hidden before:hidden">
+                    <img width="22" src="./img/room/next.svg" alt="Next icon" />
+                </div>
+                <!-- Prev -->
+                <div class="swiper-button-prev left-0 after:hidden before:hidden">
+                    <img width="22" src="./img/room/prev.svg" alt="next-icon" />
+                </div>
+            </div>
+        </div>
+        <!-- Swipper-container -->
+        <div class="container max-w-base px-5 mx-auto">
+            <div class="relative">
+                <div class="swiper pb-14 room w-full h-full lg:pb-14">
+                    <div class="swiper-wrapper">
+                        <!-- Swipper-1 -->
+                        <div class="swiper-slide flex relative w-full h-128 lg:h-176">
+                            <img height="700" class="absolute -z-10 top-0 left-0 h-full object-cover"
+                                src="./img/swipper-3/Bitmap-1.png" alt="room card" />
+                            <h3
+                                class="mt-auto pl-14 mb-9 text-white font-bold text-2xl leading-10 tracking-0.4 lg:text-27">
+                                Kitchen</h3>
+                        </div>
+                        <!-- Swipper-2 -->
+                        <div class="swiper-slide flex relative w-full h-128 lg:h-176">
+                            <img height="700" class="absolute -z-10 top-0 left-0 h-full object-cover"
+                                src="./img/swipper-3/Bitmap-2.png" alt="room card" />
+                            <h3
+                                class="mt-auto pl-14 mb-9 text-white font-bold text-2xl leading-10 tracking-0.4 lg:text-27">
+                                Bathroom</h3>
+                        </div>
+                        <!-- Swipper-3 -->
+                        <div class="swiper-slide flex relative w-full h-128 lg:h-176">
+                            <img height="700" class="absolute -z-10 top-0 left-0 h-full object-cover"
+                                src="./img/swipper-3/Bitmap-3.png" alt="room card" />
+                            <h3
+                                class="mt-auto pl-14 mb-9 text-white font-bold text-2xl leading-10 tracking-0.4 lg:text-27">
+                                Living room</h3>
+                        </div>
+                        <!-- Swipper-4 -->
+                        <div class="swiper-slide flex relative w-full h-128 lg:h-176">
+                            <img height="700" class="absolute -z-10 top-0 left-0 h-full object-cover"
+                                src="./img/swipper-3/Bitmap-1.png" alt="room card" />
+                            <h3
+                                class="mt-auto pl-14 mb-9 text-white font-bold text-2xl leading-10 tracking-0.4 lg:text-27">
+                                Kitchen</h3>
+                        </div>
+                        <!-- Swipper-5 -->
+                        <div class="swiper-slide flex relative w-full lg:h-176 h-128">
+                            <img height="700" class="absolute -z-10 top-0 left-0 h-full object-cover"
+                                src="./img/swipper-3/Bitmap-2.png" alt="room card" />
+                            <h3
+                                class="mt-auto pl-14 mb-9 text-white font-bold text-2xl leading-10 tracking-0.4 lg:text-27">
+                                Bathroom</h3>
+                        </div>
+                        <!-- Swipper-6 -->
+                        <div class="swiper-slide flex relative w-full lg:h-176 h-128">
+                            <img height="700" class="absolute -z-10 top-0 left-0 h-full object-cover"
+                                src="./img/swipper-3/Bitmap-3.png" alt="room card" />
+                            <h3
+                                class="mt-auto pl-14 mb-9 text-white font-bold text-2xl leading-10 tracking-0.4 lg:text-27">
+                                Living room</h3>
+                        </div>
+                    </div>
+                    <div style="height: 2px" class="swiper-scrollbar overflow-hidden -bottom-[54px]"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <div class="w-full  pt-9 pb-7 lg:pb-16 lg:pt-14">
+        <div class="mx-auto max-w-base flex justify-between gap-4 items-center mb-12 px-5">
+            <!-- Rewiews-header -->
+            <div class="flex items-center w-full gap-4 justify-between md:justify-start">
+                <!-- Rewiews-title -->
+                <h3 class="font-bold text-rs-black tracking-0.5 text-22 lg:text-26">Customer reviews</h3>
+            </div>
+            <!-- Swiper-navigation -->
+            <div class="w-20 relative hidden md:flex items-center lg:w-16">
+                <!-- Next -->
+                <div class="swiper-button-next right-0 after:hidden before:hidden">
+                    <img width="22" src="./img/room/next.svg" alt="" />
+                </div>
+                <!-- Prev -->
+                <div class="swiper-button-prev left-0 after:hidden before:hidden">
+                    <img width="22" src="./img/room/prev.svg" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container max-w-base px-5 mx-auto">
+            <!-- Slider-wrapper -->
+            <div class="swiper reviews">
+                <div class="swiper-wrapper flex">
+                    <!-- Slides -->
+                    <!-- 1 -->
+                    <div class="swiper-slide flex items-center">
+                        <!-- Rewiews-box -->
+                        <div class="flex flex-col py-10 pl-8 pr-6 bg-rs-green-dark h-[337px] w-80 rounded-sm">
+                            <!-- Stars -->
+                            <div class="flex gap-0.5">
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                            </div>
+                            <!-- Rewiews-context -->
+                            <div class="flex-col mt-auto">
+                                <p class="text-lg text-white tracking-0.5 font-normal mb-6">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <span class="text-base leading-4 font-normal opacity-80 text-white">Genevieve
+                                    Miller</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide flex items-center">
+                        <div class="flex flex-col py-10 pl-8 pr-6 bg-rs-green-dark h-[337px] w-80 rounded-sm">
+                            <!-- Stars -->
+                            <div class="flex gap-0.5">
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                            </div>
+                            <!-- Rewiews-context -->
+                            <div class="flex-col mt-auto">
+                                <p class="text-lg text-white tracking-0.5 font-normal mb-6">Excepteur sint occaecat
+                                    cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <span class="text-base leading-4 font-normal opacity-80 text-white">Lulu Gill</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide flex items-center">
+                        <div class="flex flex-col py-10 pl-8 pr-6 bg-rs-green-dark h-[337px] w-80 rounded-sm">
+                            <!-- Stars -->
+                            <div class="flex gap-0.5">
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                            </div>
+                            <!-- Reviews-context -->
+                            <div class="flex-col mt-auto">
+                                <p class="text-lg text-white font-normal mb-6">Duis aute irure dolor in reprehenderit in
+                                    voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <span class="text-base leading-4 font-normal opacity-80 text-white">Darrell Evans</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="swiper-slide flex items-center">
+                        <div class="flex flex-col py-10 pl-8 pr-6 bg-rs-green-dark h-[337px] w-80 rounded-sm">
+                            <!-- Stars -->
+                            <div class="flex gap-0.5">
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                            </div>
+                            <!-- Reviews-context -->
+                            <div class="flex-col mt-auto">
+                                <p class="text-lg text-white font-normal mb-6">Nostrud exercitation ullamco laboris nisi
+                                    ut aliquip ex ea
+                                    commodo consequat.</p>
+                                <span class="text-base leading-4 font-normal opacity-80 text-white">Victoria
+                                    Peterson</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="swiper-slide flex items-center">
+                        <div class="flex flex-col py-10 pl-8 pr-6 bg-rs-green-dark h-[337px] w-80 rounded-sm">
+                            <!-- Stars -->
+                            <div class="flex gap-0.5">
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                            </div>
+                            <!-- Reviews-context -->
+                            <div class="flex-col mt-auto">
+                                <p class="text-lg text-white font-normal mb-6">Duis aute irure dolor in reprehenderit in
+                                    voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <span class="text-base leading-4 font-normal opacity-80 text-white">Darrell Evans</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="swiper-slide flex items-center">
+                        <div class="flex flex-col py-10 pl-8 pr-6 bg-rs-green-dark h-[337px] w-80 rounded-sm">
+                            <!-- Stars -->
+                            <div class="flex gap-0.5">
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                                <input class="hidden" type="radio" name="rate" />
+                                <label class="fa fa-star text-xl text-white"></label>
+                            </div>
+                            <!-- Reviews-context -->
+                            <div class="flex-col mt-auto">
+                                <p class="text-lg text-white font-normal mb-6">Nostrud exercitation ullamco laboris nisi
+                                    ut aliquip ex ea
+                                    commodo consequat.</p>
+                                <span class="text-base leading-4 font-normal opacity-80 text-white">Victoria
+                                    Peterson</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Tab -->
+    <section class="pt-7 pb-11 lg:pt-14 lg:pb-14 ">
+        <div class="w-full">
+            <div class="container gap-4 max-w-base mx-auto px-5 justify-between lg:flex">
+                <img class=" w-full object-cover lg:max-h-172 lg:max-w-120" src="./img/tap-img.png" alt="Bathroom" />
+                <div class="max-w-[770px] pb-8 w-full pt-8">
+                    <h3 class="font-bold text-rs-black text-32 leading-10 mb-11 lg:mb-14 lg:text-42">Lorem ipsum dolor
+                        sit amet, consectetur
+                        adipiscing elit</h3>
+
+                    <!-- Tab -->
+                    <div class="lg:mb-12 mb-8">
+                        <ul id="tab" class="flex flex-wrap items-center mb-8 lg:mb-12">
+                            <li class="mr-2 mb-4 lg:mb-0 ">
+                                <a href="#"
+                                    class="mx-0.5  text-lg leading-6 text-black-text font-bold rounded-t-lg border-b-2 border-rs-green-dark lg:text-2xl lg:p-2 py-2 lg:border-b-4"
+                                    aria-current="page">Dashboard</a>
+                            </li>
+                            <li class="mr-2 mb-4 lg:mb-0 ">
+                                <a href="#"
+                                    class="mx-0.5  py-2 text-lg leading-6 text-rs-grey-dark font-normal rounded-t-lg lg:p-2 lg:text-2xl lg:leading-6">Lorem
+                                    ipsum</a>
+                            </li>
+                            <li class="mr-2 mb-4 lg:mb-0 ">
+                                <a href="#"
+                                    class="mx-0.5  py-2 text-lg leading-6 text-rs-grey-dark font-normal rounded-t-lg lg:p-2 lg:text-2xl lg:leading-6">Duis
+                                    aute</a>
+                            </li>
+                            <li class=" mb-4 lg:mb-0 ">
+                                <a href="#"
+                                    class="mx-0.5 py-2 text-lg leading-6 text-rs-grey-dark font-normal rounded-t-lg lg:p-2 lg:text-2xl lg:leading-6">Enim
+                                    de minim</a>
+                            </li>
+                        </ul>
+                        <div class="space-y-6 text-lg tracking-0.34 text-rs-black">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <a class="main-link" href="#">Let us inspire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights and inspiration -->
+    <section class="pt-11 mb-9 lg:pt-16 lg:pb-14">
+        <!-- Desctop -->
+        <!-- container -->
+        <div class="container max-w-base mx-auto px-5 ">
+            <div class="mb-12  flex justify-between gap-4 items-center">
+                <!-- Swipper-heading -->
+                <h3 class="font-bold text-rs-black tracking-0.5 text-22 lg:text-26">Insights and inspiration</h3>
+                <!-- Swipper-link -->
+                <a class="main-link whitespace-nowrap lg:text-base lg:leading-5" href="#">Let us inspire</a>
+            </div>
+            <!-- Grid -->
+            <div class=" hidden grid-cols-1 gap-8 lg:gap-14 sm:grid lg:grid-cols-4  md:grid-cols-3  sm:grid-cols-2">
+                <!-- 1 -->
+                <div>
+                    <img class="mb-5 object-cover w-full" src="./img/Insights and inspiration/Bitmap-1.png" alt=""
+                        aria-hidden="true">
+                    <h3 class="font-normal text-rs-black text-xl leading-5 mb-4 lg:text-lg lg:leading-6">Everything You
+                        Need To Know About Heated Towel Rails</h3>
+                    <p class="text-rs-grey-dark text-base leading-4 flex gap-4 tracking-0.5 lg:text-sm items-center">
+                        <span class="text-rs-green-dark leading-5">Inspiration</span><span>|</span> 23
+                        Mar 2022</p>
+                </div>
+                <!-- 2 -->
+                <div>
+                    <img class="mb-5 object-cover w-full" src="./img/Insights and inspiration/Bitmap-2.png"
+                        aria-hidden="true">
+                    <h3 class="font-normal text-rs-black text-xl leading-5 mb-4 lg:text-lg lg:leading-6">The Best
+                        Electric Radiators: A Buyer's Guide</h3>
+                    <p class="text-rs-grey-dark text-base leading-4 flex gap-4 tracking-0.5 lg:text-sm items-center">
+                        <span class="text-rs-green-dark leading-5">Inspiration</span><span>|</span> 23
+                        Mar 2022</p>
+                </div>
+                <!-- 3 -->
+                <div>
+                    <img class="mb-5 object-cover w-full" src="./img/Insights and inspiration/Bitmap-1.png">
+                    <h3 class="font-normal text-rs-black text-xl leading-5 mb-4 lg:text-lg lg:leading-6">Everything You
+                        Need To Know About Heated Towel Rails</h3>
+                    <p class="text-rs-grey-dark text-base leading-4 flex gap-4 tracking-0.5 lg:text-sm items-center">
+                        <span class="text-rs-green-dark leading-5">Inspiration</span><span>|</span> 23
+                        Mar 2022</p>
+                </div>
+                <!-- 4 -->
+                <div>
+                    <img class="mb-5 object-cover w-full" src="./img/Insights and inspiration/Bitmap-2.png">
+                    <h3 class="font-normal text-rs-black text-xl leading-5 mb-4 lg:text-lg lg:leading-6">The Best
+                        Electric Radiators: A Buyer's Guide</h3>
+                    <p class="text-rs-grey-dark text-base leading-4 flex gap-4 tracking-0.5 lg:text-sm items-center">
+                        <span class="text-rs-green-dark leading-5">Inspiration</span><span>|</span> 23
+                        Mar 2022</p>
+                </div>
+            </div>
+
+            <!-- Mobile-swipper -->
+            <div class="sm:hidden">
+                <div class="swiper insights">
+                    <div class="swiper-wrapper mb-16">
+                        <!-- 1 -->
+                        <div class="swiper-slide">
+                            <div>
+                                <img height="220" class="mb-5   object-cover w-full"
+                                    src="./img/Insights and inspiration/Bitmap-1.png">
+                                <h3 class="font-normal text-rs-black text-xl leading-5 mb-4 lg:text-lg lg:leading-6">
+                                    Everything You Need To Know About Heated Towel Rails</h3>
+                                <p
+                                    class="text-rs-grey-dark text-base leading-4 flex gap-4 tracking-0.5 lg:text-sm items-center">
+                                    <span class="text-rs-green-dark leading-5">Inspiration</span><span>|</span> 23 Mar
+                                    2022</p>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="swiper-slide">
+                            <div>
+                                <img height="220" class="mb-5  object-cover w-full"
+                                    src="./img/Insights and inspiration/Bitmap-2.png"
+                                    alt="The Best Electric Radiators: A Buyer's Guide1-mob">
+                                <h3 class="font-normal text-rs-black text-xl leading-5 mb-4 lg:text-lg lg:leading-6">The
+                                    Best Electric Radiators: A Buyer's Guide</h3>
+                                <p
+                                    class="text-rs-grey-dark text-base leading-4 flex gap-4 tracking-0.5 lg:text-sm items-center">
+                                    <span class="text-rs-green-dark leading-5">Inspiration</span><span>|</span> 23 Mar
+                                    2022</p>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="swiper-slide">
+                            <div>
+                                <img height="220" class="mb-5  object-cover w-full"
+                                    src="./img/Insights and inspiration/Bitmap-1.png"
+                                    alt="Everything You Need To Know About Heated Towel Rails2-mob">
+                                <h3 class="font-normal text-rs-black text-xl leading-5 mb-4 lg:text-lg lg:leading-6">
+                                    Everything You Need To Know About Heated Towel Rails</h3>
+                                <p
+                                    class="text-rs-grey-dark text-base leading-4 flex gap-4 tracking-0.5 lg:text-sm items-center">
+                                    <span class="text-rs-green-dark leading-5">Inspiration</span><span>|</span> 23 Mar
+                                    2022</p>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="swiper-slide">
+                            <div>
+                                <img height="220" class="mb-5  object-cover w-full"
+                                    src="./img/Insights and inspiration/Bitmap-2.png"
+                                    alt="The Best Electric Radiators: A Buyer's Guide2-mob">
+                                <h3 class="font-normal text-rs-black text-xl leading-5 mb-4 lg:text-lg lg:leading-6">The
+                                    Best Electric Radiators: A Buyer's Guide</h3>
+                                <p
+                                    class="text-rs-grey-dark text-base leading-4 flex gap-4 tracking-0.5 lg:text-sm items-center">
+                                    <span class="text-rs-green-dark leading-5">Inspiration</span><span>|</span> 23 Mar
+                                    2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar" style="height: 1px"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="pt-9 lg:pt-16 ">
+        <div class="pt-8 pb-11 bg-rs-green-dark lg:py-11">
+            <div class="container mx-auto px-5 max-w-base flex justify-between items-center flex-col md:flex-row">
+                <p class="max-w-xl text-white text-lg tracking-0.4 mb-8 text-center md:mb-0 md:text-left lg:text-22">
+                    Sign up for newsletter, for first access to latest news, offers, new
+                    products and inspiration.
+                </p>
+                <div class="flex items-center border md:ml-3">
+                    <input
+                        class="py-5 pl-5 pr-2 w-44 bg-rs-green-dark text-white placeholder:text-white focus:outline-none sm:w-72 md:w-96"
+                        type="text" placeholder="Your email address" />
+                    <button class="h-full text-base leading-5 tracking-0.5 bg-rs-black text-white py-5 px-4 md:px-8">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-14 bg-rs-black">
+        <section class="w-full max-w-base px-5 mx-auto">
+            <div class="grid grid-cols-1 gap-14 mb-11 sm:grid-cols-2 sm:mb-14 md:mb-28 md:grid-cols-3 lg:grid-cols-5">
+                <!-- 1 -->
+                <div>
+                    <h3 class=" font-bold uppercase text-lg leading-6 tracking-0.5 text-white/50 mb-2">Contact</h3>
+                    <ul class="mb-12">
+                        <!-- List-title -->
+                        <!-- list-items -->
+                        <li class="text-body leading-8 tracking-0.25 font-normal text-white">
+                            Get in touch with our dedicated team with any queries.
+                        </li>
+                        <li class="text-body leading-8 tracking-0.25 font-normal text-white">
+                            <a href="+0333 009 404" class="text-white">T: 0333 009 4040E:</a>
+                        </li>
+                        <li class="text-body leading-8 tracking-0.25 font-normal text-white">
+                            <a href="info@radiatorsonline.com">info@radiatorsonline.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 2 -->
+                <div>
+                    <h3 class=" font-bold uppercase text-lg leading-6 tracking-0.5 text-white/50 mb-2">Shop</h3>
+                    <ul>
+                        <!-- List-title -->
+                        <!-- list-items -->
+                        <li>
+                            <a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Radiators</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Towel
+                                radiators</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Electric
+                                radiators</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Valves
+                                & Accessories</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Brands</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 3   -->
+                <div>
+                    <h3 class=" font-bold uppercase text-lg leading-6 tracking-0.5 text-white/50 mb-2">Information</h3>
+                    <ul>
+                        <!-- list-title -->
+                        <!-- list-items -->
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Guides</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">FAQS</a></li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Blog</a></li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Delivery</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Returns</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 4 -->
+                <div>
+                    <h3 class=" font-bold uppercase text-lg leading-6 tracking-0.5 text-white/50 mb-2">Account</h3>
+                    <ul>
+                        <!-- list-title -->
+                        <!-- list-items -->
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Login</a></li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Register</a>
+                        </li>
+                        <li><a href="#" class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">My
+                                account</a></li>
+                        <li><a href="#" class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">MY
+                                wishlist</a></li>
+                        <li>
+                            <a href="#" class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Track
+                                my order</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Cart</a></li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Checkout</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 5 -->
+                <div>
+                    <h3 class=" font-bold uppercase text-lg leading-6 tracking-0.5 text-white/50 mb-2">Folliow us</h3>
+                    <ul>
+                        <!-- footer-title -->
+                        <!-- text-15 leading-8 tracking-0.25 font-normal text-white capitalize -->
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Instagram</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Facebook</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-15 leading-8 tracking-0.25 font-normal text-white capitalize">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer-bottom -->
+            <div
+                class="flex justify-center items-center text-base text-white uppercase flex-wrap md:justify-between md:flex-nowrap">
+                <div class="flex justify-center flex-wrap order-3 md:flex-nowrap md:mr-5 md:justify-start md:order-1">
+                    <!-- Footer-logo -->
+                    <a href="index.html" class="flex shrink-0 mb-4 md:mb-0 md:mr-8">
+                        <img src="./img/footer/footer-logo.svg" alt="Logo" width="208" height="22" />
+                    </a>
+                    <p class="text-xs leading-6 tracking-0.25 font-normal text-white text-center md:text-left">©
+                        Radiators Online
+                        2022. All Rights Reserved. Privacy Policy.Terms of Service. Website by code23</p>
+                </div>
+                <!-- Partners -->
+                <ul class="flex gap-1 order-1 mb-12 md:mb-0 md:order-3">
+                    <li class="flex items-center justify-center rounded-sm border h-6 w-9 bg-white">
+                        <img src="./img/footer/circle.svg" alt="Pinterest" />
+                    </li>
+                    <li class="flex items-center justify-center rounded-sm border h-6 w-9 bg-white">
+                        <img src="./img/footer/p.svg" alt="American Express" />
+                    </li>
+                    <li class="flex items-center justify-center rounded-sm border h-6 w-9 bg-white">
+                        <img src="./img/footer/circle.svg" alt="Pinterest" />
+                    </li>
+                    <li class="flex items-center justify-center rounded-sm border h-6 w-9 bg-white">
+                        <img src="./img/footer/visa.svg" alt="Circle" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer start -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
